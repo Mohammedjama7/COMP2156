@@ -4,8 +4,7 @@
   "description": "Student ID: 101335623   Name: Mohammed Jama",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+ "test": "echo \"Warning: No tests created yet.\""
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Mohammedjama7/COMP2156.git"
