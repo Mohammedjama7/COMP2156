@@ -1,36 +1,21 @@
-name: Node.js CI
-
+name: CI
 on:
   push:
-    branches:
-      - main
+    branches: [ "main" ]
   pull_request:
-    branches:
-      - main
+    branches: [ "main" ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-
-<<<<<<< HEAD
       - name: Set up Node.js
-=======
-      - name: Setup Node.js
->>>>>>> b3034d1 (Fix CI workflow)
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-
       - name: Install dependencies
         run: npm install
-
       - name: Run tests
         run: npm test
-<<<<<<< HEAD
-=======
-
->>>>>>> b3034d1 (Fix CI workflow)
